@@ -1,0 +1,46 @@
+/* ======= GOOGLE FONTS ======= */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap');
+
+/* ======= VARIABLES ======= */
+
+:root {
+    --header-height: 3rem;
+    --font-semi: 600;
+    --font-bold: 700;
+}
+
+/* ======= COLOURS ======= */
+:root{
+    --first-colour: #E55947;
+    --first-colour-alt: #D2321E;
+    --white-colour: #FAFAFF;
+    --dark-colour: #101010;
+    -dark-colur-light: #606060;
+    --grey-colour: #F0F1F3;
+
+}
+
+/* ======= TYPOGRAPHY ======= */
+:root {
+    --body-font: 'Open Sans', sans-serif;
+    --big-font-size: 3rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .75rem;
+}
+
+@media screen and (min-width: 768px) {
+    :root {
+        --big-font-size: 6rem;
+        --h1-font-size: 2.25rem;
+        --h2-font-size: 1.5rem;
+        --normal-font-size: 1rem;
+        --small-font-size: .813rem;
+    }
+}
+/* ======= Z index ======= */
+
+/* ======= BASE CSS ======= */
+
+/* ======= CLASS CSS ======= */
