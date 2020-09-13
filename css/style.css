@@ -39,8 +39,43 @@
         --small-font-size: .813rem;
     }
 }
+
+/* ======= MARGINS ======= */
+:root {
+    --mb-1: .5rem;
+    --mb2-2: 1rem;
+    --mb-3: 1.5rem;
+    --mb-4: 2rem;
+}
+
 /* ======= Z index ======= */
+:root {
+    --z-tooltip: 10;
+    --z-fixed: 100;
+}
 
 /* ======= BASE CSS ======= */
+*, ::before, ::after {
+    box-sizing: border-box;
+}
 
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: var(--header-height) 0 0 0;
+    color: var(--dark-colour);
+    font-size: var(--normal-font-size);
+    font-family: var(--body-font);
+    line-height: 1.6;
+}
+
+h1,h2,p {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+}
 /* ======= CLASS CSS ======= */
