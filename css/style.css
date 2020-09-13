@@ -15,7 +15,7 @@
     --first-colour-alt: #D2321E;
     --white-colour: #FAFAFF;
     --dark-colour: #101010;
-    -dark-colur-light: #606060;
+    -dark-colour-light: #606060;
     --grey-colour: #F0F1F3;
 
 }
@@ -54,6 +54,7 @@
     --z-fixed: 100;
 }
 
+
 /* ======= BASE CSS ======= */
 *, ::before, ::after {
     box-sizing: border-box;
@@ -77,5 +78,49 @@ h1,h2,p {
 
 ul {
     margin: 0;
+    padding: 0;
+    list-style: none;
 }
+
+a {
+    text-decoration: none;
+    color: var(--dark-colour);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
 /* ======= CLASS CSS ======= */
+.section {
+    padding: 3rem 0;
+}
+
+.section-title {
+    font-size: var(--h2-font-size);
+    color: (--dark-colour);
+    margin: var(--mb-4) 0 var(--mb-1);
+    text-align: center;
+}
+
+.section-all {
+    display: block;
+    font-size: var(--small-font-size);
+    font-weight: var(--font-semi);
+    color: var(--dark-colour-light);
+    text-align: center;
+    margin-bottom: var(--mb-2);
+}
+
+/* ======= LAYOUT ======= */
+.bd-grid {
+    max-width: 1024px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-column-gap: 2rem;
+    width: calc(100% - 3rem);
+    margin-left: var(--mb-3);
+    margin-right: var(--mb-3);
+}
