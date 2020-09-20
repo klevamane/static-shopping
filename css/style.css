@@ -269,3 +269,8 @@ img {
     font-size: var(--small-font-size);
     color: var(--dark-colour);
 }
+
+.collection__view:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
