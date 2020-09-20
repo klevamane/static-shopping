@@ -148,12 +148,12 @@ img {
     .nav__menu {
         position: fixed;
         top: var(--header-height);
-        right: 0;
+        right: -100%;
         width: 80%;
         height: 100%;
         padding: 2rem;
         background-color: var(--white-colour);
-        transition: .5;
+        transition: .5s;
     }
 }
 
@@ -182,4 +182,90 @@ img {
 .nav__toggle {
     font-size: 1.5rem;
     cursor: pointer;
+}
+
+
+/* = = = = = = = = = =  SHOW MENU = = = = = = = = = = */
+.show {
+    right: 0;
+}
+
+.active {
+    color: var(--first-colour);
+}
+
+
+/* = = = = = = = = = =  HOME = = = = = = = = = = */
+
+.home {
+    background-color: var(--grey-colour);
+}
+
+.home__container {
+    height: calc(100vh - var(--header-height));
+}
+
+.home__data {
+    padding-top: 6rem;
+}
+
+.home__title {
+    align-self: center;
+    font-size: var(--big-font-size);
+    line-height: 1;
+    letter-spacing: .5rem;
+    margin-bottom: 4rem;
+}
+
+.home__title span {
+    font-size: var(--h1-font-size);
+}
+
+.home__img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 260px  ;
+}
+
+
+/* = = = = = = = = = =  COLLECTION = = = = = = = = = = */
+.collection__container {
+    row-gap: 2rem;
+
+}
+
+.collection__box {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 0 1.5rem;
+    background-color: var(--grey-colour);
+    transition: .3s;
+}
+
+.collection__box:hover {
+    transform: translateY(-.5rem);
+}
+
+.collection__img {
+    width: 100px;
+}
+
+.collection__title {
+    font-size: var(--h1-font-size);
+    line-height: 1.2;
+    margin-bottom: var(--mb2-2);
+    text-transform: uppercase;
+    font-weight: var(--font-semi);
+}
+
+.collection__subtitle {
+    font-size: var(--h2-font-size);
+    color: var(--dark-colour);
+}
+
+.collection__view {
+    font-size: var(--small-font-size);
+    color: var(--dark-colour);
 }
